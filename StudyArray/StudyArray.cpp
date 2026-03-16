@@ -329,7 +329,7 @@ int main()
 	else if (n % 2 != 0 && n % 4 == 0)
 		cout << "So KHONG chia het cho 2";
 	else if (n % 2 != 0 && n % 4 != 0)
-		cout << "So KHONG chia het cho ca 2 va 4";*/
+		cout << "So KHONG chia het cho ca 2 va 4";*/ //test
 //B12
 	int n;
 	cout << "so phan tu: ";
