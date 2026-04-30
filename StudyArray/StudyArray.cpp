@@ -11,6 +11,10 @@
 // B9: Nhập một dãy số tìm số chia hết cho 5
 // B10: Nhập 1 dãy số in ra 2 dãy số chẵn và lẻ
 #include <iostream>
+#include <string>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 void swapInt(int& a, int& b) {
@@ -167,7 +171,7 @@ int main()
 	//	c = a * b;
 	//}
 	//cout << "Ket qua :"<< c <<".";
-	
+
 	//B5
 	/*double n;
 	cout << "so giay ";
@@ -190,7 +194,7 @@ int main()
 	cout << "Thoi gian la:" << t << " " ;*/
 
 	//B6
-	
+
 		/*int d, m, y;
 		cout << "ngay: ";
 		cin >> d;
@@ -231,130 +235,278 @@ int main()
 				cout << "Ngay thang nam KHONG HOP LE";
 			}
 		*/
-//B7
-	/*double a, b, c;
-	cout << "a = ";
-	cin >> a;
-	cout << "b = ";
-	cin >> b;
-	cout << "c = ";
-	cin >> c;
-	if (a != 0) {
-		double x = (c - b) / a;
-		cout << "ket qua la:"<<x<<" ";
-	}
-	else if (b == c) {
-		cout << "pt vo so nghiem";
-	}
-	else cout << "pt vo nghiem";*/
+		//B7
+			/*double a, b, c;
+			cout << "a = ";
+			cin >> a;
+			cout << "b = ";
+			cin >> b;
+			cout << "c = ";
+			cin >> c;
+			if (a != 0) {
+				double x = (c - b) / a;
+				cout << "ket qua la:"<<x<<" ";
+			}
+			else if (b == c) {
+				cout << "pt vo so nghiem";
+			}
+			else cout << "pt vo nghiem";*/
 
-//B8
-	/*double diem;
-	cout << "Diem so: ";
-	cin >> diem;
-	if (diem >= 9 && diem <= 10) {
-		cout << "Xep loai xuat sac";
+			//B8
+				/*double diem;
+				cout << "Diem so: ";
+				cin >> diem;
+				if (diem >= 9 && diem <= 10) {
+					cout << "Xep loai xuat sac";
+				}
+				else if (diem < 9 && diem >= 7.5) {
+					cout << "Xep loai gioi";
+				}
+				else if (diem < 7.5 && diem >= 6) {
+					cout << "Xep loai kha";
+				}
+				else if (diem < 6 && diem >= 5) {
+					cout << "Xep loai TB";
+				}
+				else if (diem < 5) {
+					cout << "Xep loai yeu";
+				}*/
+				//B9
+					/*int n;
+					int a[100] = {};
+					cout << "so phan tu: ";
+					cin >> n;
+					for (int i = 0; i < n; i++)
+					{
+						cout << "a[" << i << "]=";
+						cin >> a[i];
+					}
+					bool timThay = false;
+					cout << "Cac so chia het cho 5: ";
+					for (int i = 0; i < n; i++) {
+						if (a[i] % 5 == 0) {
+							cout << a[i] << " ";
+							timThay = true;
+						}
+					}
+
+					if (!timThay)
+						cout << "Khong co so nao chia het cho 5";
+					return 0;*/
+					//B10
+						/*int n;
+						cout << "Nhap so phan tu: ";
+						cin >> n;
+						int a[100];
+						for (int i = 0; i < n; i++) {
+							cout << "a " << i << " =";
+							cin >> a[i];
+						}
+						cout << "\nDay so chan: ";
+						bool soChan = false;
+						for (int i = 0; i < n; i++) {
+							if (a[i] % 2 == 0) {
+								cout << a[i] << " ";
+								soChan = true;
+							}
+						}
+						if (!soChan) cout << "Khong co";
+
+						cout << "\nDay so le: ";
+						bool soLe = false;
+						for (int i = 0; i < n; i++) {
+							if (a[i] % 2 != 0) {
+								cout << a[i] << " ";
+								soLe = true;
+							}
+						}
+						if (!soLe) cout << "Khong co";*/
+						//B11
+							/*int n;
+							cout << "Nhap n: ";
+							cin >> n;
+
+							if (n % 2 == 0 && n % 4 == 0)
+								cout << "So chia het cho ca 2 va 4";
+							else if (n % 2 == 0 && n % 4 != 0)
+								cout << "So KHONG chia het cho 4";
+							else if (n % 2 != 0 && n % 4 == 0)
+								cout << "So KHONG chia het cho 2";
+							else if (n % 2 != 0 && n % 4 != 0)
+								cout << "So KHONG chia het cho ca 2 va 4";*/ //test
+								//B12
+									/*int n;
+									cout << "so phan tu: ";
+									cin >> n;
+									int a[100];
+									for (int i = 0; i < n; i++) {
+										cout << "a[" << i << "] = ";
+										cin >> a[i];
+									}
+									cout << "Cac so am: ";
+									bool coSoAm = false;
+
+									for (int i = 0; i < n; i++) {
+										if (a[i] < 0) {
+											cout << a[i] << " ";
+											coSoAm = true;
+										}
+									}
+									if (!coSoAm)
+										cout << "Khong co so am";*/
+//B1
+								/*
+										
+											int a = 10;
+											double b = 3.14;
+											char c = 'A';
+											bool d = true;
+											string e = "Hello";
+
+											cout << "int: " << a << endl;
+											cout << "double: " << b << endl;
+											cout << "char: " << c << endl;
+											cout << "bool: " << d << endl;
+											cout << "string: " << e << endl;*/
+
+//B2
+	/*string ten;
+	int tuoi;
+	cout << "Nhap ten: ";
+	getline(cin, ten);   
+	cout << "Nhap tuoi: ";
+	cin >> tuoi;
+	cout << "Ten: " << ten << endl;
+	cout << "Tuoi: " << tuoi << endl; */
+//B3
+/*double luong;
+
+cout << "Nhap luong (trieu): ";
+cin >> luong;
+
+if (luong <= 5) {
+	cout << "Chet doi";
+}
+else if (luong > 5 && luong < 10) {
+	cout << "Thoi thop";
+}
+else if (luong >= 10 && luong <= 20) {
+	cout << "Du an";
+}
+else {
+	cout << "Tam on";
+}*/
+
+
+//B4
+/*int n;
+cout << "Nhap so phan tu: ";
+cin >> n;
+int a[100];
+for (int i = 0; i < n; i++)// Nhap mang 
+{
+	cout << "a[" << i << "] = ";
+	cin >> a[i];
+}
+cout << "Cac so nho hon 10: ";// In cac so < 10
+bool timThay = false;
+
+for (int i = 0; i < n; i++) {
+	if (a[i] < 10) {
+		cout << a[i] << " ";
+		timThay = true;
 	}
-	else if (diem < 9 && diem >= 7.5) {
-		cout << "Xep loai gioi";
-	}
-	else if (diem < 7.5 && diem >= 6) {
-		cout << "Xep loai kha";
-	}
-	else if (diem < 6 && diem >= 5) {
-		cout << "Xep loai TB";
-	}
-	else if (diem < 5) {
-		cout << "Xep loai yeu";
-	}*/
-//B9
-	/*int n;
-	int a[100] = {};
-	cout << "so phan tu: ";
-	cin >> n;
-	for (int i = 0; i < n; i++)
+}
+
+if (!timThay)
+cout << "Khong co";*/
+//B5
+/*double a, b;
+char pt;
+
+cout << "Nhap phep tinh (+, -, *, /, c - can bac 2): ";
+cin >> pt;
+
+cout << "so thu nhat: ";
+cin >> a;
+
+cout << "so thu hai: ";
+cin >> b;
+
+if (pt == '+') {
+	cout << "Ket qua: " << a + b;
+}
+else if (pt == '-') {
+	cout << "Ket qua: " << a - b;
+}
+else if (pt == '*') {
+	cout << "Ket qua: " << a * b;
+}
+else if (pt == '/') {
+	if (b != 0)
+		cout << "Ket qua: " << a / b;
+	else
+		cout << "vo nghiem";
+}
+else if (pt == 'c') {
+	if (a >= 0)
+		cout << "Can bac 2 cua " << a << " = " << sqrt(a);
+	else
+		cout << "vo nghiem";
+}
+else {
+	cout << "Phep tinh khong hop le";
+}*/
+//B6
+
+/*int n;
+cout << "Nhap so phan tu: ";
+cin >> n;
+
+int a[100];
+
+for (int i = 0; i < n; i++) 
+{
+	cout << "a[" << i << "] = ";
+	cin >> a[i];
+}
+int max = a[0];
+int min = a[0];
+
+for (int i = 1; i < n; i++) 
+{
+	if (a[i] > max) 
 	{
-		cout << "a[" << i << "]=";
-		cin >> a[i];
-	}
-	bool timThay = false;
-	cout << "Cac so chia het cho 5: ";
-	for (int i = 0; i < n; i++) {
-		if (a[i] % 5 == 0) {
-			cout << a[i] << " ";
-			timThay = true;
-		}	
+		max = a[i];
 	}
 
-	if (!timThay)
-		cout << "Khong co so nao chia het cho 5";
-	return 0;*/
-//B10
-	/*int n;
-	cout << "Nhap so phan tu: ";
-	cin >> n;
-	int a[100];
-	for (int i = 0; i < n; i++) {
-		cout << "a " << i << " =";
-		cin >> a[i];
+	if (a[i] < min) 
+	{
+		min = a[i];
 	}
-	cout << "\nDay so chan: ";
-	bool soChan = false;
-	for (int i = 0; i < n; i++) {
-		if (a[i] % 2 == 0) {
-			cout << a[i] << " ";
-			soChan = true;
-		}
-	}
-	if (!soChan) cout << "Khong co";
+}
+cout << "So lon nhat: " << max << endl;
+cout << "So nho nhat: " << min << endl;*/
+int secret, guess;
 
-	cout << "\nDay so le: ";
-	bool soLe = false;
-	for (int i = 0; i < n; i++) {
-		if (a[i] % 2 != 0) {
-			cout << a[i] << " ";
-			soLe = true;
-		}
-	}
-	if (!soLe) cout << "Khong co";*/
-//B11
-	/*int n;
-	cout << "Nhap n: ";
-	cin >> n;
+srand(time(0));
+secret = rand() % 100 + 1;
 
-	if (n % 2 == 0 && n % 4 == 0)
-		cout << "So chia het cho ca 2 va 4";
-	else if (n % 2 == 0 && n % 4 != 0)
-		cout << "So KHONG chia het cho 4";
-	else if (n % 2 != 0 && n % 4 == 0)
-		cout << "So KHONG chia het cho 2";
-	else if (n % 2 != 0 && n % 4 != 0)
-		cout << "So KHONG chia het cho ca 2 va 4";*/ //test
-//B12
-	int n;
-	cout << "so phan tu: ";
-	cin >> n;
-	int a[100];
-	for (int i = 0; i < n; i++) {
-		cout << "a[" << i << "] = ";
-		cin >> a[i];
-	}
-	cout << "Cac so am: ";
-	bool coSoAm = false;
+cout << "Moi ban nhap tu 1 - 100: ";
+cin >> guess;
 
-	for (int i = 0; i < n; i++) {
-		if (a[i] < 0) {
-			cout << a[i] << " ";
-			coSoAm = true;
-		}
-	}
-	if (!coSoAm)
-	cout << "Khong co so am";
+while (guess != secret) {
+	cout << "Nhap lai: ";
+	cin >> guess;
 
-	
+	if (guess > secret)
+		cout << "Lon hon\n";
+	else if (guess < secret)
+		cout << "Nho hon\n";
+}
 
-
-	return 0;
+cout << "Doan dung!";
+return 0;
 }
 
 
